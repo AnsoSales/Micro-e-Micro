@@ -10,7 +10,7 @@
  3. Apresente aplicações de sistemas embarcados:
  
   (a) Para a indústria automotiva;
-   - Controlador de Airbags, portas, janelas
+   - Controlador de Airbags, portas e janelas.
    
   (b) Para eletrodomésticos;
    - Microondas, Geladeiras Smarts, Smart TVs.
