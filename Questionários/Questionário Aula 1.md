@@ -9,13 +9,13 @@
   
  3. Apresente aplicações de sistemas embarcados:
  
-  (a) Para a indústria automotiva;
+   (a) Para a indústria automotiva;
    - Controlador de Airbags, portas e janelas.
    
-  (b) Para eletrodomésticos;
+   (b) Para eletrodomésticos;
    - Microondas, Geladeiras Smarts, Smart TVs.
    
-  (c) Para automação industrial;
+   (c) Para automação industrial;
    - Controle de máquinas e robôs que auxiliam no processo de fabricação de algum produto.
   
  4. Cite arquiteturas possíveis e as diferenças entre elas.
