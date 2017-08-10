@@ -8,10 +8,13 @@
   Arduíno, MSP430, 8051, dentre outros.
   
  3. Apresente aplicações de sistemas embarcados:
+ 
   (a) Para a indústria automotiva;
    - Controlador de Airbags, portas, janelas
+   
   (b) Para eletrodomésticos;
    - Microondas, Geladeiras Smarts, Smart TVs.
+   
   (c) Para automação industrial;
    - Controle de máquinas e robôs que auxiliam no processo de fabricação de algum produto.
   
