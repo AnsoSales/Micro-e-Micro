@@ -30,9 +30,9 @@ Para este código, responda: (a) A variável `i` é armazenada na memória RAM o
  
 5. Considere a variável inteira `i`, armazenando o valor `0x8051ABCD`. Se `i` é armazenada na memória a partir do endereço `0x0200`, como ficam este byte e os seguintes, considerando que a memória é: (a) Little-endian; (b) Big-endian.
  - (A) 0x0200, 0x2001, 0x2002, 0x2003
-     CD      AB	     51      80
+       | CD  |   AB  |   51  |  80  |.
  - (B) 0x0200, 0x2001, 0x2002, 0x2003
-         80      51	  AB     CD
+       |  80  |  51  |	 AB  |  CD  |.
 	 
 6. Sabendo que o processador do MSP430 tem registradores de 16 bits, como ele soma duas variáveis de 32 bits?
  - Cada uma das variáveis ocupará dois registradores, e mais um par de registradores irá receber o resultado da soma enter esses dois números de 32 bits
