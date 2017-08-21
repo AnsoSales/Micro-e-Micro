@@ -11,7 +11,7 @@
 	 - A = A ^= (BIT3 + BIT5 +BIT8);
 	(f) Inverter o nibble mais significativo de `a`, e setar o nibble menos significativo de `a`. 
          - A ^= (BIT9=BIT6);
-	 - A |= (BIT4 +BIT2 + BIT0); 
+	   A = (BIT4 +BIT2 + BIT0); 
 2. Considerando a placa Launchpad do MSP430, escreva o código em C para piscar os dois LEDs ininterruptamente.
  - 
 3. Considerando a placa Launchpad do MSP430, escreva o código em C para piscar duas vezes os dois LEDs sempre que o usuário pressionar o botão.
