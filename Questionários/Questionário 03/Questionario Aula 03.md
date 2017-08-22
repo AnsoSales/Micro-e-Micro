@@ -46,11 +46,11 @@
 			
 3. Considerando a placa Launchpad do MSP430, escreva o código em C para piscar duas vezes os dois LEDs sempre que o usuário pressionar o botão.
  -
- 	#include <msp430g2553.h>
-	#define LED1 BIT0
-	#define LED2 BIT6
-	#define SAIDA (LED1|LED2)
-	#define botao BIT2	
+ 	#include <msp430g2553.h>;
+	#define LED1 BIT0;
+	#define LED2 BIT6;
+	#define SAIDA (LED1|LED2);
+	#define botao BIT2;	
 		int segs;
 		int main(void)
 			{
