@@ -83,7 +83,7 @@
 4. Considerando a placa Launchpad do MSP430, faça uma função em C que pisca os dois LEDs uma vez.
 
  	            ```C
-			function pisca(void)
+			void pisca()
 				{
 				 for(segs = 0; segs=100000; segs++)
 				 {
