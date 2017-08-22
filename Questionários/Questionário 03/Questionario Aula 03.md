@@ -3,7 +3,7 @@
 	 - A = A + BIT0; 
 	 
 	(b) Somente setar dois bits de `a`: o menos significativo e o segundo menos significativo.	
-	   A = A + (BIT0+BIT1);
+	 - A = A + (BIT0+BIT1);
 	   
 	(c) Somente zerar o terceiro bit menos significativo de `a`.
 	 - A &= ~(BIT0+BIT1);
@@ -20,6 +20,7 @@
 	   
 2. Considerando a placa Launchpad do MSP430, escreva o código em C para piscar os dois LEDs ininterruptamente.
  
+    ```C	
  	#include <msp430g2553.h>
 	#define LED1 BIT0
 	#define LED2 BIT6
@@ -42,10 +43,11 @@
 				 P1OUT = 0;
 				 }
 				}
-			}
+			}```
 			
 3. Considerando a placa Launchpad do MSP430, escreva o código em C para piscar duas vezes os dois LEDs sempre que o usuário pressionar o botão.
  
+    ```C
  	#include <msp430g2553.h>;
 	#define LED1 BIT0;
 	#define LED2 BIT6;
@@ -77,7 +79,7 @@
 				while (botao&PIIN == 0){}
 				 P1OUT = 0;
 				}
-			}
+			}```
 4. Considerando a placa Launchpad do MSP430, faça uma função em C que pisca os dois LEDs uma vez.
  			function pisca(void)
 				{
