@@ -48,14 +48,14 @@ Utilize os registradores R11, R12, R13, R14 e R15 para armazenar valores tempor√
 	- add.w R4,R4
 	
 	(b) `g *= 3;`
-	```assembly
-	- mov.w R5, R11
+	```
+	  mov.w R5, R11
 	  add.w R5, R11
 	  add.w R5, R11```
 	  
 	(c) `h *= 4;`
-	```assembly
-	- mov.w R6, R12
+	```
+	  mov.w R6, R12
 	  add.w R6, R12
 	  add.w R6, R12
 	  add.w R6, R12```
