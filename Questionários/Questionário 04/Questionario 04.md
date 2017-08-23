@@ -8,44 +8,46 @@
 Utilize os registradores R11, R12, R13, R14 e R15 para armazenar valores temporários.
 
 1. Traduza as seguintes linhas em C para a linguagem assembly do MSP430. Utilize somente as seguintes instruções: mov.w, add.w e sub.w.
-	(a) `f = 0;`
-	- mov.w #0, R4
-	
-	(b) `g++;`
-	- mov.w #1, R11
-	  add.w R11, R5
-	  
-	(c) `h--;`
-	- mov.w #1, R12
-	  sub.w R11, R6
-	  
-	(d) `i += 2;`
-	- mov.w #2, R13
-	  add.w R11, R7
-	  
-	(e) `j -= 2;`
-	- mov.w #2, R14
-	  suv.w R11, R8
 
-2. Traduza as seguintes linhas em C para a linguagem assembly do MSP430. Utilize somente as seguintes instruções: mov.w, add.w, sub.w, clr.w, dec.w, decd.w, inc.w e incd.w.
 	(a) `f = 0;`
+	```Assembly
+	  mov.w #0, R4
+	```
+	(b) `g++;`
+	```Assembly
+	  mov.w #1, R11
+	  add.w R11, R5
+	```
+	(c) `h--;`
+	```Assembly
+	  mov.w #1, R12
+	  sub.w R11, R6
+	```
+	(d) `i += 2;`	
+	```Assembly
+	 mov.w #2, R13
+	  add.w R11, R7
+	```	
+	(e) `j -= 2;`	
+	```Assembly
+	  mov.w #2, R14
+	  suv.w R11, R8
+        ```
 	
+2. Traduza as seguintes linhas em C para a linguagem assembly do MSP430. Utilize somente as seguintes instruções: mov.w, add.w, sub.w, clr.w, dec.w, decd.w, inc.w e incd.w.
+
+	(a) `f = 0;`
 	```Assembly
 	mov.w #0, R4
-	```
-	
-	(b) `g++;`
-	
+	```	
+	(b) `g++;`	
 	```Assembly 
 	inc.w R5
-	```
-	
-	(c) `h--;`
-	
+	```	
+	(c) `h--;`	
 	```Assembly 
 	dec.w R6
-	```
-	
+	```	
 	(d) `i += 2;`
 	
 	```Assembly 
@@ -58,28 +60,30 @@ Utilize os registradores R11, R12, R13, R14 e R15 para armazenar valores tempor�
 	```
 	
 3. Traduza as seguintes linhas em C para a linguagem assembly do MSP430. Utilize somente as seguintes instruções: mov.w, add.w, sub.w, clr.w, dec.w, decd.w, inc.w e incd.w.
+
 	(a) `f *= 2;`
-	
 	```Assembly  
 	  add.w R4,R4
 	```
-	(b) `g *= 3;`
-	
+	(b) `g *= 3;`	
 	```Assembly
 	  mov.w R5, R11
 	  add.w R5, R11
 	  add.w R5, R11
 	  ```
-	  
 	(c) `h *= 4;`
-	
 	```Assembly
 	  mov.w R6, R12
 	  add.w R6, R12
 	  add.w R6, R12
 	  add.w R6, R12
 	  ```
-	  
 	(d) `A[2] = A[1] + A[0];`
+	```Assembly
+	```
 	(e) `A[3] = 2*f - 4*h;`
+	```Assembly
+	```
 	(f) `A[3] = 2*(f - 2*h);`
+	```Assembly
+	```
