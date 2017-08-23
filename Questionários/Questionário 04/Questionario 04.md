@@ -25,13 +25,13 @@ Utilize os registradores R11, R12, R13, R14 e R15 para armazenar valores tempor�
 	```
 	(d) `i += 2;`	
 	```Assembly
-	 mov.w #2, R13
+	  mov.w #2, R13
 	  add.w R11, R7
 	```	
 	(e) `j -= 2;`	
 	```Assembly
 	  mov.w #2, R14
-	  suv.w R11, R8
+	  sub.w R11, R8
         ```
 	
 2. Traduza as seguintes linhas em C para a linguagem assembly do MSP430. Utilize somente as seguintes instruções: mov.w, add.w, sub.w, clr.w, dec.w, decd.w, inc.w e incd.w.
@@ -51,12 +51,12 @@ Utilize os registradores R11, R12, R13, R14 e R15 para armazenar valores tempor�
 	(d) `i += 2;`
 	
 	```Assembly 
-	incd.w #2, R7
+	incd.w R7
 	```
 	(e) `j -= 2;`
 	
 	```Assembly
-	decd.w #2, R8
+	decd.w R8
 	```
 	
 3. Traduza as seguintes linhas em C para a linguagem assembly do MSP430. Utilize somente as seguintes instruções: mov.w, add.w, sub.w, clr.w, dec.w, decd.w, inc.w e incd.w.
