@@ -102,10 +102,10 @@ Utilize os registradores R11, R12, R13, R14 e R15 para armazenar valores tempor√
 	  
 	(d) `A[2] = A[1] + A[0];`
 	 
-	 ```Assembly
+	```Assembly
 	   mov.w 2(R9), 4(R9)
 	   add.w 0(R9), 4(R9)
-	 ```
+	```
 	 
 	(e) `A[3] = 2*f - 4*h;`
 	
@@ -123,7 +123,7 @@ Utilize os registradores R11, R12, R13, R14 e R15 para armazenar valores tempor√
 	
 	(f) `A[3] = 2*(f - 2*h);`
 	
-	``` Assembly
+	```Assembly
 	   mov.w R4, R12
            mov.w R6, R13
            add.w R6, R13
