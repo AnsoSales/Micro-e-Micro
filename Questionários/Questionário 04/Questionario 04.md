@@ -87,7 +87,7 @@ Utilize os registradores R11, R12, R13, R14 e R15 para armazenar valores tempor√
 	
 	```Assembly
 	   mov.w R5, R11
-      	   add.w R5, R11
+	   add.w R5, R11
 	   add.w R5, R11
 	   mov.w R11, R5
 	```
