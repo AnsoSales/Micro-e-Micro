@@ -80,54 +80,54 @@ Utilize os registradores R11, R12, R13, R14 e R15 para armazenar valores tempor√
 	(a) `f *= 2;`
 	
 	```Assembly  
-		add.w R4, R4
+	   add.w R4, R4
 	```
 	
 	(b) `g *= 3;`
 	
 	```Assembly
-		mov.w R5, R11
-		add.w R5, R11
-		add.w R5, R11
-		mov.w R11, R5
+	   mov.w R5, R11
+      	   add.w R5, R11
+	   add.w R5, R11
+	   mov.w R11, R5
 	```
 	  
 	(c) `h *= 4;`
 	
 	```Assembly
-		mov.w R6, R12
-		add.w R6, R12
-		add.w R6, R12
-		add.w R6, R12
-		```
+	   mov.w R6, R12
+	   add.w R6, R12
+	   add.w R6, R12
+	   add.w R6, R12
+	```
 	  
 	(d) `A[2] = A[1] + A[0];`
 	 
 	```Assembly
-		mov.w 2(R9), 4(R9)
-		add.w 0(R9), 4(R9)
+	   mov.w 2(R9), 4(R9)
+	   add.w 0(R9), 4(R9)
 	```
 	
 	(e) `A[3] = 2*f - 4*h;`
 
 	```Assembly
-		mov.w R4, R11
-		mov.w R6, R12
-		add.w R4, R11
-		add.w R6, R12
-		add.w R6, R12
-		add.w R6, R12
-		sub.w R12, R11
-		mov.w R11, R13
-		mov.w R13, 6(R9)
+	   mov.w R4, R11
+	   mov.w R6, R12
+	   add.w R4, R11
+	   add.w R6, R12
+	   add.w R6, R12
+	   add.w R6, R12
+	   sub.w R12, R11
+	   mov.w R11, R13
+	   mov.w R13, 6(R9)
 	```  
 	
 	(f) `A[3] = 2*(f - 2*h);`
 	
 	```Assembly
-		mov.w R4, R12
-		mov.w R6, R13
-		add.w R6, R13
-		sub.w R6, R12
-		mov.w R12, 6(R9)
+	   mov.w R4, R12
+	   mov.w R6, R13
+	   add.w R6, R13
+	   sub.w R6, R12
+	   mov.w R12, 6(R9)
 	```
