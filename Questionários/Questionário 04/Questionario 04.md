@@ -12,7 +12,9 @@ Utilize os registradores R11, R12, R13, R14 e R15 para armazenar valores tempor√
 	(a) `f = 0;`
 	
 	```Assembly
+	
 	   mov.w #0, R4
+	   
 	   ```
 	(b) `g++;`
 	
