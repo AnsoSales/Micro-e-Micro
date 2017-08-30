@@ -63,7 +63,7 @@ Utilize os registradores R11, R12, R13, R14 e R15 para armazenar valores tempor√
     add.w R6, R12
     sub.w R12, R11
     mov.w R11, (6)R9
-    ```
+ ```
     
 
 (f) `A[5] = 6*(f - 2*h);`
