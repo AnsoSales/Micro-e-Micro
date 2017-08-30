@@ -68,7 +68,7 @@ Utilize os registradores R11, R12, R13, R14 e R15 para armazenar valores tempor√
 
 (f) `A[5] = 6*(f - 2*h);`
 
-```Assembly
+ ```Assembly
     mov.w R4, R11
     mov.w R6, R12
     add.w R6, R12
