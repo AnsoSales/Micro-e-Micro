@@ -30,13 +30,13 @@ Utilize os registradores R11, R12, R13, R14 e R15 para armazenar valores tempor√
 	```
 	(e) Somente inverter o bit mais significativo de R9.
 	```Assembly
-	   mov.w #0b1000000000000000, R11
+	   mov.w #1000000000000000b, R11
 	   xor.w R11, R9
 	```
 	(f) Inverter o nibble mais significativo de R10, e setar o nibble menos significativo de R10.
 	```Assembly
-	   mov.w #0b1111000000000000, R11
-	   mov.w #0b0000000000001111, R12
+	   mov.w #1111000000000000b, R11
+	   mov.w #0000000000001111b, R12
 	   xor.w R11, R10
 	   or.w R12, R10
 	```
