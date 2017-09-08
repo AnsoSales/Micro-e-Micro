@@ -45,38 +45,41 @@
 3. Considerando a placa Launchpad do MSP430, escreva o código em C para piscar duas vezes os dois LEDs sempre que o usuário pressionar o botão.
  
     ```C
- 	#include <msp430g2553.h>;
-	#define LED1 BIT0;
-	#define LED2 BIT6;
-	#define SAIDA (LED1|LED2);
-	#define botao BIT2;	
-		int segs;
+		#include <msp430.h>
+		#include <msp430g2553.h>
+		#define LED1 BIT0
+		#define LED2 BIT6
+		#define SAIDA (LED1|LED2)
+		#define botao BIT3
+		/**
+		* main.c
+		*/
 		int main(void)
-			{
-				WDTCTL = WDTPW | WDTHOLD;
-				P1DIR = SAIDA;
-				
-				while (botao&PIIN != 0){}
-				 for(segs = 0; segs=100000; segs++)
-				 {
-				 P1OUT = SAIDA;	
-				 }
-				 for(segs = 0; segs=100000; segs++)
-				 {
-				 P1OUT = 0;
-				 }
-				 for(segs = 0; segs=100000; segs++)
-				 {
-				 P1OUT = SAIDA;	
-				 }
-				 for(segs = 0; segs=100000; segs++)
-				 {
-				 P1OUT = 0;
-				 }
-				while (botao&PIIN == 0){}
-				 P1OUT = 0;
-				}
-			}```
+		{
+			WDTCTL = WDTPW | WDTHOLD;	// stop watchdog timer
+			P1DIR |= SAIDA;
+			P1OUT |= SAIDA;
+			P1DIR &= ~botao;
+			P1REN |= botao;
+			P1OUT |= botao;
+			while (1)
+
+		 {
+		   if ((P1IN & botao) == 0 )
+		   {
+			P1OUT = SAIDA + botao;
+			__delay_cycles(1000000);
+			P1OUT &= ~SAIDA;
+			__delay_cycles(1000000);
+			P1OUT = SAIDA + botao;
+			__delay_cycles(1000000);
+			P1OUT &= ~SAIDA;
+		    }else{
+		 	P1OUT &= ~SAIDA;
+		    }
+		  }
+		}
+```
 4. Considerando a placa Launchpad do MSP430, faça uma função em C que pisca os dois LEDs uma vez.
 
 	```C
