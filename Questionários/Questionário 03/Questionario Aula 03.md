@@ -34,14 +34,11 @@
 				
 				while (1)
 				{
-				 for(segs = 0; segs=100000; segs++)
-				 {
 				 P1OUT = SAIDA;	
-				 }
-				 for(segs = 0; segs=100000; segs++)
-				 {
+				 __delay_cycles(1000000)
 				 P1OUT = 0;
-				 }
+				 __delay_cycles(1000000);
+				
 				}
 			}```
 			
