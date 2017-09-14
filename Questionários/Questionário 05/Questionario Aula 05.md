@@ -10,13 +10,11 @@ Utilize os registradores R11, R12, R13, R14 e R15 para armazenar valores tempor√
 1. Escreva os trechos de c√≥digo assembly do MSP430 para:
 	(a) Somente setar o bit menos significativo de R5.
 	```Assembly
-	   mov.w #01, R12
-	   or.w R12, R5
+	   bis.w #01, R5
 	```
 	(b) Somente setar dois bits de R6: o menos significativo e o segundo menos significativo.
 	```Assembly
-	   mov.w #02, R13
-	   or.w R13, R6
+	   bis.w #03, R6
 	```
 	(c) Somente zerar o terceiro bit menos significativo de R7.
 	```Assembly
@@ -47,6 +45,19 @@ Utilize os registradores R11, R12, R13, R14 e R15 para armazenar valores tempor√
 if(i>j) f = g+h+10;
 else f = g-h-10;
 ```
+
+```Assembly
+	   cmp R7, R8
+	   jeq ELSE
+	   jl ELSE
+	   add.w #10, R6
+	   add.w R6, R5
+	   mov.w R5, R4
+      ELSE:	   
+	   sub.w #10, R6
+	   sub.w R6, R5
+	   mov.w R5, R4   
+	```
 
 3. "Traduza" o seguinte trecho de c√≥digo em C para o assembly do MSP430:
 
