@@ -57,7 +57,7 @@ else f = g-h-10;
 	   sub.w #10, R6
 	   sub.w R6, R5
 	   mov.w R5, R4   
-	```
+```
 
 3. "Traduza" o seguinte trecho de código em C para o assembly do MSP430:
 
